@@ -1,0 +1,72 @@
+.main{
+    height: 400px;
+    width: 400px;
+}
+.main img{
+    height: 100px;
+    width: 100px;
+}
+
+body{
+    background-image: url(images/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+div{
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.startWindow {
+
+    /* background-image: url(images/0-start.jpg);
+    display: flex;
+    height: 100%;
+    margin: 0 auto;   
+    text-align: center; */
+    z-index: 1000;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('images/0-start.jpg');
+    background-position-x: 50%;
+}
+.startGame{
+    margin: 360px auto 0;
+}
+.gameArea{
+    display: none;
+}
+span{
+    
+    color: #fff; 
+    font-size: 30px;
+    
+}
+.endGameLose {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    background-image: url('images/lose.jpg');
+    background-position-x: 50%;
+    z-index: 1000;
+    background-size: cover;
+    left: 0;
+    top: -100vh;
+}
+
+.endGameWin {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    z-index: 1000;
+    background-size: cover;
+    background-image: url('images/win.jpg');
+    background-position-x: 50%;
+    left: 0;
+    top: -100vh;
+}
